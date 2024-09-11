@@ -1,0 +1,100 @@
+/* UsersList.module.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif; 
+}
+
+.users-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.user-item {
+  width: calc(50% - 10px);
+  margin: 5px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease; 
+  box-sizing: border-box; 
+}
+
+@media (max-width: 600px) {
+  .user-item {
+    width: 100%; 
+  }
+}
+
+.user-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.user-item button {
+  color: white;
+  border: none;
+  padding: 10px 16px; 
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.user-item button.delete-btn {
+  background-color: #dc3545;
+  margin: 3px;
+}
+
+.user-item button.delete-btn:hover {
+  background-color: #c82333;
+  margin: 3px;
+}
+
+.user-item button.edit-btn {
+  background-color: #28a745;
+  margin: 3px;
+}
+
+.user-item button.edit-btn:hover {
+  background-color: #218838;
+  margin: 3px;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formSection {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
